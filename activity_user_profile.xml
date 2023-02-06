@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userpro" />
+
+    <TextView
+        android:id="@+id/msgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_horizontal|clip_vertical|left"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:foregroundGravity="center"
+        android:gravity="fill"
+        android:padding="10dp"
+        android:text="@string/john_dae"
+        android:textAlignment="textStart"
+        android:textColor="#F3090808"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgTV"
+        app:layout_constraintVertical_bias="0.128">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|clip_vertical|left"
+            android:foregroundGravity="center"
+            android:padding="10dp"
+            android:text="About Me"
+            android:textAlignment="textStart"
+            android:textColor="#F3090808"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|clip_vertical|left"
+            android:foregroundGravity="center"
+            android:gravity="fill"
+            android:padding="10dp"
+            android:text="#adoptDon'tShop"
+            android:textAlignment="textStart"
+            android:textColor="#F3090808"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|clip_vertical|left"
+            android:foregroundGravity="center"
+            android:gravity="fill"
+            android:padding="10dp"
+            android:text="Banglore,India"
+            android:textAlignment="textStart"
+            android:textColor="#F3090808"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="248dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="Epost"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logOut"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="248dp"
+        android:backgroundTint="#1C1C1C"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

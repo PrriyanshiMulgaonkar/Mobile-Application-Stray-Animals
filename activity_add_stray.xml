@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add"
+    tools:context=".AddStray">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="381dp"
+        android:layout_height="588dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="410dp"
+            android:layout_height="350dp"
+            android:layout_marginBottom="70dp"
+            android:background="#B2CFC1C1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.67">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/allura"
+                android:text="Aashiyana"
+                android:textColor="#D5302E6C"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/request" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add image"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Name of the pet"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#0D0E0E" />
+
+            <EditText
+                android:id="@+id/vaccinated"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Vaccinated"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#1C1D1E" />
+
+            <EditText
+                android:id="@+id/Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Info"
+                android:inputType="textPersonName|text"
+                android:textColorHint="#1C1B1B" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/password"-->
+            <!--                android:layout_width="300dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="40dp"-->
+            <!--                android:layout_marginBottom="20dp"-->
+            <!--                android:autofillHints=""-->
+            <!--                android:ems="10"-->
+            <!--                android:hint="Password"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:minHeight="48dp"-->
+            <!--                android:textColorHint="#1F2020" />-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/password1"-->
+            <!--                android:layout_width="300dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="40dp"-->
+            <!--                android:layout_marginBottom="20dp"-->
+            <!--                android:autofillHints=""-->
+            <!--                android:ems="10"-->
+            <!--                android:hint="Confirm Password"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:minHeight="48dp"-->
+            <!--                android:textColorHint="#101112" />-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@android:string/cancel"
+                    android:textAllCaps="false"
+                    app:cornerRadius="40dp" />
+
+                <Button
+                    android:id="@+id/submited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="55dp"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    app:cornerRadius="40dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
